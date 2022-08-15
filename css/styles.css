@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap'); */
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 * {
     /* font-family: 'Roboto Mono', monospace; */
@@ -36,7 +37,7 @@
     grid-gap: 10px;
     grid-auto-flow: dense;
     grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 .d-grid .sub {
