@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    /* font-family: 'Roboto Mono', monospace; */
+    /* font-family: 'Share Tech', sans-serif; */
+    /* font-family: 'Noto Sans Mono', monospace; */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+}
+
+* p {
+    font-size: 16px;
+}
+
+* h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+* small {
+    font-size: 13px;
+    color: var(--color-title-text)
+}
+
+:root {
+    --color-title: #3176e0;
+    --color-subtitle: #83acec;
+    --color-title-text: #979797;
+    --color-white: #fff
+}
+
+.cuerpo-perfil {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.contenido {
+    padding-top: 5%;
+}
+
+.persona {
+    width: 100%;
+}
+
+.persona .foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.persona .foto img {
+    width: 100%;
+    height: 100%;
+}
+
+.persona .nombre h1 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--color-title);
+    margin-bottom: 0px;
+}
+
+.persona .profesion h2 {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--color-title);
+    margin-top: 0px;
+}
+
+.titulo {
+    color: var(--color-subtitle);
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.divisor {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-subtitle);
+    margin-bottom: 10px;
+}
+
+.presentacion {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+}
+
+.presentacion .persona {
+    grid-column: span 1;
+}
+
+.presentacion .datos {
+    grid-column: span 1;
+}
+
+.informacion {
+    width: 100%;
+}
+
+.informacion p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.informacion span {
+    color: var(--color-title-text);
+}
+
+.perfil {
+    width: 100%;
+}
+
+.perfil p {
+    text-align: justify;
+}
+
+.educacion {
+    width: 100%;
+}
+
+.educacion .carreras {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+}
+
+.educacion .carreras .carrera {
+    grid-column: span 1;
+}
+
+.educacion .carreras .carrera small,
+.educacion .carreras .carrera p,
+.educacion .carreras .carrera h3 {
+    margin: 0;
+}
+
+.habilidades {
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.habilidades ul {
+    list-style-image: url("../img/insignia.png");
+}
+
+.d-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+}
+
+.d-grid .sub {
+    grid-column: span 1;
+}
+
+.idiomas {
+    width: 100%;
+}
+
+.idiomas .idioma {
+    padding-left: 20px;
+}
+
+.idiomas .idioma p {
+    color: var(--color-subtitle);
+    margin-bottom: 0;
+}
+
+.conocimientos {
+    width: 100%;
+}
+
+.conocimientos ul {
+    list-style-image: url("../img/ok.png");
+}
+
+.conocimientos ul li {
+    text-align: justify;
+}
+
+.archivos {
+    width: 100%;
+}
+
+.archivos .documentos {
+    width: 100%;
+}
+
+.archivos .documentos iframe {
+    width: 100%;
+    height: 100%;
+    grid-column: span 1;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.btn.btn-mostrar {
+    background-color: var(--color-title);
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(380px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+}
