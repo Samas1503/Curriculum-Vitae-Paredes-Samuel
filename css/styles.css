@@ -31,14 +31,26 @@
     --color-white: #fff
 }
 
-.cuerpo-perfil {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 100px;
+.d-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.d-grid .sub {
+    grid-column: span 1;
 }
 
 .contenido {
     padding-top: 5%;
+}
+
+.cuerpo-perfil {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
 }
 
 .persona {
@@ -93,21 +105,6 @@
     margin-bottom: 10px;
 }
 
-.presentacion {
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-}
-
-.presentacion .persona {
-    grid-column: span 1;
-}
-
-.presentacion .datos {
-    grid-column: span 1;
-}
-
 .informacion {
     width: 100%;
 }
@@ -133,17 +130,6 @@
     width: 100%;
 }
 
-.educacion .carreras {
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-}
-
-.educacion .carreras .carrera {
-    grid-column: span 1;
-}
-
 .educacion .carreras .carrera small,
 .educacion .carreras .carrera p,
 .educacion .carreras .carrera h3 {
@@ -157,17 +143,6 @@
 
 .habilidades ul {
     list-style-image: url("../img/insignia.png");
-}
-
-.d-grid {
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-}
-
-.d-grid .sub {
-    grid-column: span 1;
 }
 
 .idiomas {
@@ -230,8 +205,8 @@
 
 .mostrar {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 1rem;
     grid-auto-flow: dense;
     grid-auto-rows: minmax(380px, auto);
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
 }
