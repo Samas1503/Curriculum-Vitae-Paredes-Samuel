@@ -129,13 +129,16 @@
     text-align: justify;
 }
 
-.educacion {
+.educacion, .experiencia {
     width: 100%;
 }
 
 .educacion .carreras .carrera small,
 .educacion .carreras .carrera p,
-.educacion .carreras .carrera h3 {
+.educacion .carreras .carrera h3,
+.experiencia .trabajos .trabajo small,
+.experiencia .trabajos .trabajo p,
+.experiencia .trabajos .trabajo h3 {
     margin: 0;
 }
 
@@ -173,25 +176,11 @@
     text-align: justify;
 }
 
-.archivos {
-    width: 100%;
-}
-
-.archivos .documentos {
-    position: relative;
-    padding-bottom: 53%;
-    padding-left: 0;
-    height: 0;
-    overflow: hidden;
-}
-
-.archivos .documentos iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    grid-column: span 1;
+.certificados-cursos .certificado{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 50px;
+    text-align: justify;
 }
 
 .btn {
@@ -206,7 +195,56 @@
 .btn.btn-mostrar {
     background-color: var(--color-title);
     color: var(--color-white);
-    margin-bottom: 20px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content{
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 65%;
+  border-radius: 10px;
+}
+
+.modal .modal-content object {
+    height:90%;
+    width: 100%;
+}
+
+.cerrar{
+  color: white !important;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: rgb(253, 0, 0);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom:20px;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  background-color: rgb(205, 0, 0);
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: pointer;
 }
 
 .ocultar {
@@ -218,5 +256,5 @@
     grid-gap: 1rem;
     grid-auto-flow: dense;
     grid-auto-rows: minmax(380px, auto);
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
 }
