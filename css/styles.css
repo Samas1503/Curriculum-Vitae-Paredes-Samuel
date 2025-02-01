@@ -133,6 +133,11 @@
     width: 100%;
 }
 
+.educacion, .experiencia img {
+    width: 15px;
+    margin-right: 5px;
+}
+
 .educacion .carreras .carrera small,
 .educacion .carreras .carrera p,
 .educacion .carreras .carrera h3,
@@ -140,6 +145,10 @@
 .experiencia .trabajos .trabajo p,
 .experiencia .trabajos .trabajo h3 {
     margin: 0;
+}
+
+.trabajos .trabajo h3 {
+    font-size: 20px;
 }
 
 .habilidades {
